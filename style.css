@@ -1,0 +1,55 @@
+#main{
+  line-height: 2rem;
+  font-family: arial;
+  display: grid;
+  grid-template-columns: 16% 1fr 16%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'head head head'
+    '. wrapper .';
+
+  background-color: #c6ffd2;
+}
+
+h1 {
+  grid-area: head;
+  text-align: center;
+}
+
+.wrapper {
+  grid-area: wrapper;
+  background-color: #fff;
+  border-radius: 15px;
+  padding-bottom: 1rem;
+}
+
+#description {
+  text-align: center;
+}
+
+.tab{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-left: 2rem;
+}
+
+ul{
+  padding: 0;
+}
+
+.leftTab{
+  text-align: right;
+}
+
+.Ftab{
+  display: grid;
+  grid-template-columns: 40% 1fr 40%;
+  grid-template-areas:
+  '. submit .'
+
+
+}
+#submit{
+  grid-area: submit;
+}
